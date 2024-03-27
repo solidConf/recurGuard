@@ -16,4 +16,4 @@
    CVE benchmark is available [here](https://github.com/solidConf/recurGuard/tree/main/Bechmarks/CVE_Benchmark).  
    The analysis of each CVE is [here](https://sites.google.com/view/infiniterecursion/home/cve).  
 3. Unknown bug detected in real-world projects (RQ3).  
-   We have made the [case study](https://sites.google.com/view/infiniterecursion/home/realworld) of the unknown bugs.
+   We have made the [case study](https://sites.google.com/view/infiniterecursion/home/realworld) for all of the unknown bugs.
