@@ -286,7 +286,7 @@ void _entryCheck(unsigned char** oldArr, unsigned char* newVal, unsigned int* ti
 
         if(!memcmp(*(oldArr + i), newVal, SHA256_BLOCK_SIZE)){
             printf("Find an infinite Recursion！\n");
-            abort();
+            exit(88);
         }
     }
 
