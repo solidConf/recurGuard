@@ -1,0 +1,95 @@
+This is Ultimate 0.2.2-dev-2329fc7
+[2024-02-03 22:36:46,338 INFO  L177        SettingsManager]: Resetting all preferences to default values...
+[2024-02-03 22:36:46,339 INFO  L181        SettingsManager]: Resetting UltimateCore preferences to default values
+[2024-02-03 22:36:46,357 INFO  L184        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2024-02-03 22:36:46,357 INFO  L181        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2024-02-03 22:36:46,358 INFO  L181        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2024-02-03 22:36:46,358 INFO  L181        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2024-02-03 22:36:46,359 INFO  L181        SettingsManager]: Resetting LassoRanker preferences to default values
+[2024-02-03 22:36:46,360 INFO  L181        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2024-02-03 22:36:46,360 INFO  L181        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2024-02-03 22:36:46,361 INFO  L181        SettingsManager]: Resetting Sifa preferences to default values
+[2024-02-03 22:36:46,361 INFO  L184        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2024-02-03 22:36:46,361 INFO  L181        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2024-02-03 22:36:46,362 INFO  L181        SettingsManager]: Resetting PEA to Boogie preferences to default values
+[2024-02-03 22:36:46,362 INFO  L181        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2024-02-03 22:36:46,363 INFO  L181        SettingsManager]: Resetting ChcToBoogie preferences to default values
+[2024-02-03 22:36:46,363 INFO  L181        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2024-02-03 22:36:46,364 INFO  L181        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2024-02-03 22:36:46,367 INFO  L181        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2024-02-03 22:36:46,368 INFO  L181        SettingsManager]: Resetting CodeCheck preferences to default values
+[2024-02-03 22:36:46,369 INFO  L181        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2024-02-03 22:36:46,370 INFO  L181        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2024-02-03 22:36:46,370 INFO  L181        SettingsManager]: Resetting Referee preferences to default values
+[2024-02-03 22:36:46,371 INFO  L181        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2024-02-03 22:36:46,372 INFO  L184        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2024-02-03 22:36:46,372 INFO  L184        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2024-02-03 22:36:46,373 INFO  L181        SettingsManager]: Resetting TreeAutomizer preferences to default values
+[2024-02-03 22:36:46,373 INFO  L181        SettingsManager]: Resetting IcfgToChc preferences to default values
+[2024-02-03 22:36:46,373 INFO  L181        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2024-02-03 22:36:46,374 INFO  L184        SettingsManager]: ReqToTest provides no preferences, ignoring...
+[2024-02-03 22:36:46,374 INFO  L181        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2024-02-03 22:36:46,375 INFO  L181        SettingsManager]: Resetting ChcSmtPrinter preferences to default values
+[2024-02-03 22:36:46,375 INFO  L181        SettingsManager]: Resetting ReqPrinter preferences to default values
+[2024-02-03 22:36:46,375 INFO  L181        SettingsManager]: Resetting Witness Printer preferences to default values
+[2024-02-03 22:36:46,376 INFO  L184        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2024-02-03 22:36:46,376 INFO  L181        SettingsManager]: Resetting CDTParser preferences to default values
+[2024-02-03 22:36:46,376 INFO  L184        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2024-02-03 22:36:46,376 INFO  L184        SettingsManager]: ReqParser provides no preferences, ignoring...
+[2024-02-03 22:36:46,377 INFO  L181        SettingsManager]: Resetting SmtParser preferences to default values
+[2024-02-03 22:36:46,377 INFO  L181        SettingsManager]: Resetting Witness Parser preferences to default values
+[2024-02-03 22:36:46,377 INFO  L188        SettingsManager]: Finished resetting all preferences to default values...
+[2024-02-03 22:36:46,378 INFO  L101        SettingsManager]: Beginning loading settings from /home/zy/Documents/workplace/checkers/uautomizer/UAutomizer-linux/config/svcomp-Termination-64bit-Automizer_Default.epf
+[2024-02-03 22:36:46,392 INFO  L113        SettingsManager]: Loading preferences was successful
+[2024-02-03 22:36:46,392 INFO  L115        SettingsManager]: Preferences different from defaults after loading the file:
+[2024-02-03 22:36:46,392 INFO  L136        SettingsManager]: Preferences of UltimateCore differ from their defaults:
+[2024-02-03 22:36:46,392 INFO  L138        SettingsManager]:  * Log level for class=de.uni_freiburg.informatik.ultimate.lib.smtlibutils.quantifier.QuantifierPusher=ERROR;
+[2024-02-03 22:36:46,393 INFO  L136        SettingsManager]: Preferences of BlockEncodingV2 differ from their defaults:
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * Create parallel compositions if possible=false
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * Use SBE=true
+[2024-02-03 22:36:46,393 INFO  L136        SettingsManager]: Preferences of BuchiAutomizer differ from their defaults:
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * NCSB implementation=INTSET_LAZY3
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * Use old map elimination=false
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * Use external solver (rank synthesis)=false
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * Use only trivial implications for array writes=true
+[2024-02-03 22:36:46,393 INFO  L138        SettingsManager]:  * Rank analysis=LINEAR_WITH_GUESSES
+[2024-02-03 22:36:46,393 INFO  L136        SettingsManager]: Preferences of CACSL2BoogieTranslator differ from their defaults:
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Check unreachability of error function in SV-COMP mode=false
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Overapproximate operations on floating types=true
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Check division by zero=IGNORE
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Pointer to allocated memory at dereference=ASSUME
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * If two pointers are subtracted or compared they have the same base address=ASSUME
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Check array bounds for arrays that are off heap=ASSUME
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Check if freed pointer was valid=false
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Assume nondeterminstic values are in range=false
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Use constant arrays=true
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Pointer base address is valid at dereference=ASSUME
+[2024-02-03 22:36:46,394 INFO  L136        SettingsManager]: Preferences of RCFGBuilder differ from their defaults:
+[2024-02-03 22:36:46,394 INFO  L138        SettingsManager]:  * Size of a code block=SequenceOfStatements
+[2024-02-03 22:36:46,394 INFO  L136        SettingsManager]: Preferences of TraceAbstraction differ from their defaults:
+[2024-02-03 22:36:46,395 INFO  L138        SettingsManager]:  * Trace refinement strategy=CAMEL
+[2024-02-03 22:36:46,395 INFO  L136        SettingsManager]: Preferences of IcfgTransformer differ from their defaults:
+[2024-02-03 22:36:46,395 INFO  L138        SettingsManager]:  * TransformationType=MODULO_NEIGHBOR
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/home/zy/Documents/workplace/checkers/uautomizer/UAutomizer-linux/plugins/com.sun.xml.bind_2.2.0.v201505121915.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator: Entry function -> main
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Witness directory -> /home/zy/Documents/workplace/checkers/uautomizer/UAutomizer-linux
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Witness filename -> witness.graphml
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Write witness besides input file -> false
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data specification -> CHECK( init(main()), LTL(F end) )
+
+
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data producer -> Automizer
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data architecture -> 64bit
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data programhash -> bf5e61ce01f8259a94bd33cf345072a13e3f3ec64decc2d31ca6e5f1e1799815
+[2024-02-03 22:36:46,561 INFO  L75    nceAwareModelManager]: Repository-Root is: /tmp
+[2024-02-03 22:36:46,577 WARN  L246   ainManager$Toolchain]: [Toolchain 1]: No parsers available for /home/zy/Documents/workplace/recursion/recursion_cases/OSS-Bench/Incorrect_Return_2_NT.cpp
+The toolchain threw an exception: class de.uni_freiburg.informatik.ultimate.core.coreplugin.exceptions.ParserInitializationException: Parser initialization failed
+RESULT: An exception occured during the execution of Ultimate: The toolchain threw an exception
+de.uni_freiburg.informatik.ultimate.core.coreplugin.exceptions.ParserInitializationException: Parser initialization failed
+	at de.uni_freiburg.informatik.ultimate.core.coreplugin.toolchain.DefaultToolchainJob.run(DefaultToolchainJob.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Received shutdown request...
