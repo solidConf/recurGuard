@@ -3,9 +3,9 @@
 
 
 ## Implement details
-1. [State revisit monitor on recursions.](https://sites.google.com/view/endwatch/home/src)
-2. [Location selection for pivot function](https://sites.google.com/view/infiniterecursion/home/pivot)
-3. [Monotonicity checking](https://sites.google.com/view/infiniterecursion/home/monotonicity)
+1. [State revisit monitor on recursions.](https://sites.google.com/view/endwatch/home/src).
+2. [Location selection for pivot functions](https://sites.google.com/view/infiniterecursion/home/pivot).
+3. [Monotonicity checking](https://sites.google.com/view/infiniterecursion/home/monotonicity).
 
 
 ## Supplemental Materials
