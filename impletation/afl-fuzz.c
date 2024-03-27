@@ -333,7 +333,8 @@ enum {
   /* 02 */ FAULT_CRASH,
   /* 03 */ FAULT_ERROR,
   /* 04 */ FAULT_NOINST,
-  /* 05 */ FAULT_NOBITS
+  /* 05 */ FAULT_NOBITS,
+  /* 06*/  NON_TERM
 };
 
 
@@ -2487,6 +2488,11 @@ static u8 run_target(char** argv, u32 timeout) {
     return FAULT_CRASH;
   }
 
+  if(uses_asan && WEXITSTATUS(status) == NON_TERM_ERROR) {
+      kill_signal = 0;
+      return NON_TERM;
+  }
+
   if ((dumb_mode == 1 || no_forkserver) && tb4 == EXEC_FAIL_SIG)
     return FAULT_ERROR;
 
@@ -3113,7 +3119,7 @@ static u8* describe_op(u8 hnb) {
 
 static void write_crash_readme(void) {
 
-  u8* fn = alloc_printf("%s/crashes/README.txt", out_dir);
+  u8* fn = alloc_printf("%s/non_term_recursions/README.txt", out_dir);
   s32 fd;
   FILE* f;
 
@@ -3323,7 +3329,46 @@ keep_as_crash:
       last_crash_execs = total_execs;
 
       break;
+    case NON_TERM:
 
+        /* This is handled in a manner roughly similar to timeouts,
+           except for slightly different limits and no need to re-run test
+           cases. */
+
+//        total_crashes++;
+
+          if (unique_crashes >= KEEP_UNIQUE_CRASH) return keeping;
+
+          if (!dumb_mode) {
+
+#ifdef WORD_SIZE_64
+              simplify_trace((u64*)trace_bits);
+#else
+              simplify_trace((u32*)trace_bits);
+#endif /* ^WORD_SIZE_64 */
+
+              if (!has_new_bits(virgin_crash)) return keeping;
+
+          }
+
+          if (!unique_crashes) write_crash_readme();
+
+#ifndef SIMPLE_FILES
+
+          fn = alloc_printf("%s/non_term_recursions/id:%06llu,sig:%02u,%s", out_dir,
+                            unique_crashes, kill_signal, describe_op(0));
+
+#else
+
+          fn = alloc_printf("%s/crashes/id_%06llu_%02u", out_dir, unique_crashes,
+                        kill_signal);
+
+#endif /* ^!SIMPLE_FILES */
+
+          unique_crashes++;
+
+          last_crash_time = get_cur_time();
+          last_crash_execs = total_execs;
     case FAULT_ERROR: FATAL("Unable to execute target application");
 
     default: return keeping;
