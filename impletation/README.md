@@ -24,6 +24,6 @@ $./RecurGuard program.c
 ```
 Then run afl-fuzz to fuzzing on the project.
 ```
-$./afl-fuzz -i [input] -o [out] program.c
+$./afl-fuzz -i [input] -o [out] program
 ```
 Finally, you can find the non-termination report for the project in "out/non_term_recursion" file.
